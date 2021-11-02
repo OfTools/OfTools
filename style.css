@@ -13,13 +13,49 @@ body{
     min-height: 1000px;
 }
 
-section .banner{
+section{
+    padding: 100px ;
+}
+
+.banner{
     position: relative;
     width: 100%;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+}
+
+.banner h2{
+    font-size: 3em;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.5em;
+}
+
+.banner p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 550;
+}
+
+.banner .btn{
+    font-size: 18px ;
+    position: relative;
+    background: #2E8B57;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.banner .btn h1{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 600;
 }
 
 header{
@@ -59,19 +95,4 @@ header .navigation li a{
     letter-spacing: 2px;
     font-weight: 500px;
     text-decoration: none;
-}
-
-section .content{
-    max-width: 900px;
-    padding: 100px;
-}
-
-section ::before{
-    content: '';
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    background: linear-gradient(#2dc966, #3CADF0);
-    transform: translate(1000px, 120px);
-    border-radius: 50%;
 }
