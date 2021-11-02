@@ -1,39 +1,98 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Online, Tools, Website"/>
-    <meta name="google" content="notranslate" />
-    <meta name="description" content="The Free Online Tools Website For You" />
-    <meta name="author" content="Of Tools" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="style.css" rel="stylesheet" >
-    <script src="script.js" defer ></script>
-    <link href="image/OfToolsGreen.png" rel="shortcut icon"/>
-    <title>Of Tools</title>
-</head>
-<body>
-    <header>
-        <a href="#home" class="logo">Of Tools</a>
-        <ul class="navigation"> 
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#tools">Tools</a></li>
-        </ul>
-    </header>
-    <section class="banner" id="home">
-        <div class="content">
-            <h2>Convenient And Functional</h2>
-            <p>The Free Online Tools Website For You</p>
-        </div>
-    </section>
-    <section class="" id="about">
-        <div></div>
-    </section>
-    <section class="" id="tools">
-        <div></div>
-    </section>
-</body>
-</html>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popins', sans-serif;
+}
+
+body{
+    background-color:rgb(39, 39, 39) ;
+    min-height: 1000px;
+}
+
+section{
+    padding: 100px ;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner h2{
+    font-size: 3em;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.5em;
+}
+
+.banner p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 550;
+}
+
+.banner .btn{
+    font-size: 18px ;
+    position: relative;
+    background: #2E8B57;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.banner .btn h1{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 600;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    padding: 40px 100px;
+    z-index: 10000;
+}
+
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+
+header .navigation{
+    position: relative;
+    display: flex;
+}
+
+header .navigation li{
+    list-style: none;
+}
+
+header .navigation li a{
+    display: inline-block;
+    color: #fff;
+    margin: 0px 15px;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    text-decoration: none;
+}
