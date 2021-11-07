@@ -9,8 +9,7 @@
 }
 
 body{
-    background-color:rgb(39, 39, 39) ;
-    min-height: 1000px;
+
 }
 
 section{
@@ -24,6 +23,7 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #151414;
 }
 
 .banner h2{
@@ -52,23 +52,30 @@ section{
     font-weight: 500;
 }
 
-.banner .btn h1{
+.banner h1{
     font-size: 1em;
     color: #fff;
     font-weight: 600;
 }
 
 header{
+    background-color: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: 0.5s;
-    padding: 40px 100px;
-    z-index: 10000;
+}
+
+header .navBar{
+    background-color: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
 header .logo{
@@ -76,6 +83,10 @@ header .logo{
     font-weight: 700;
     font-size: 2em;
     text-decoration: none;
+}
+
+header .navBar .logo{
+    color: #000000;
 }
 
 
@@ -95,4 +106,12 @@ header .navigation li a{
     letter-spacing: 2px;
     font-weight: 500px;
     text-decoration: none;
+}
+
+header .navBar .navigation li a{
+    color: #000000;
+}
+
+header .navBar .navigation li a:hover{
+    color: #2E8B57;
 }
