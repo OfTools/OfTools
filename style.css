@@ -13,24 +13,29 @@ body{
 }
 
 section{
-    padding: 100px ;
+    padding: 100px;
 }
 
 .banner{
+    background-color: #151414;
     position: relative;
     width: 100%;
     min-height: 100vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background-color: #151414;
+    text-align: center;
 }
 
 .banner h2{
-    font-size: 3em;
+    font-size: 4em;
     color: #fff;
-    font-weight: 700;
+    font-weight: 720;
     line-height: 1.5em;
+}
+
+.banner h2 span{
+    color: #2E8B57;
 }
 
 .banner p{
@@ -50,12 +55,17 @@ section{
     text-decoration: none;
     letter-spacing: 2px;
     font-weight: 500;
+    transition: 0.4s;
 }
 
-.banner h1{
+.banner .btn h1{
     font-size: 1em;
     color: #fff;
     font-weight: 600;
+}
+
+.banner .btn:hover{
+    letter-spacing: 6px;
 }
 
 header{
@@ -72,15 +82,16 @@ header{
 }
 
 header .logo{
+    display: inline-block;
     color: #fff;
     font-weight: 700;
     font-size: 2em;
     text-decoration: none;
+    transition: 0.4s;
 }
 
 header.sticky .logo:hover{
     color: #2E8B57;
-    transition: 0.4s;
 }
 
 header.sticky .logo{
@@ -121,15 +132,37 @@ header.sticky .navigation li a:hover{
 }
 
 .container{
-    height: 600px;
-    background-color: #161623;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #161623;
+    min-height: 100vh;
     max-width: 1400px;
     flex-wrap: wrap;
     z-index: 1;
+}
+
+.container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#02deee, #02ee93);
+    clip-path: circle(23% at right 60%);
+}
+
+.container::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f00, #f0f);
+    clip-path: circle(20% at 5% 30%);
 }
 
 .container .card{
@@ -156,15 +189,22 @@ header.sticky .navigation li a:hover{
 }
 
 .container .card .content h3{
-    font-size: 1.8em;
+    font-size: 2.1em;
     color: #fff;
+    z-index: 1;
+}
+
+
+.container .card .content h3 span{
+    font-size: 1.2em;
+    color: #2E8B57;
     z-index: 1;
 }
 
 .container .card .content p{
     font-size: 1em;
     color: #fff;
-    font-weight: 300;
+    font-weight: 200;
 }
 
 .container .card .content a{
@@ -178,18 +218,11 @@ header.sticky .navigation li a:hover{
     text-decoration: none;
     font-weight: 500;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    transition: 0.4s;
 }
 
 .container .card .content a:hover{
-    position: relative;
-    display: inline-block;
-    padding: 8px 20px;
-    margin-top: 15px;
     background: #2E8B57;
     color: #fff;
-    border-radius: 20px;
-    text-decoration: none;
-    font-weight: 500;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
-    transition: 0.4s;
+    letter-spacing: 1.5px;
 }
